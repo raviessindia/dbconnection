@@ -7,10 +7,9 @@
   /* Connect to MySQL */
   $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD);
   if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Maintenance " . mysqli_connect_error());
 	}
-	echo "Connected successfully";
-  if (mysqli_connect_errno()) echo "Failed to connect to MySQL: " . mysqli_connect_error();
+	echo "Well Done";
 ?>
 </body>
 </html>
